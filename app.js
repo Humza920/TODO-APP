@@ -12,8 +12,8 @@ function addTodo() {
 function render() {
     ul.innerHTML=""  
     for (let i = 0; i < arr.length; i++) {
-        ul.innerHTML+=`<li>${arr[i]} </br> <button onclick="editTodo(${i})">EDIT</button>
-         <button onclick="deleteTodo(${i})">DELETE</button></li>`
+        ul.innerHTML+=`<li>${arr[i]} </br> <button onclick="editTodo(${i})">EDIT  <span><i class="fa-solid fa-pen-to-square"></i></span>  </button>
+         <button onclick="deleteTodo(${i})">DELETE  <span><i class="fa-solid fa-trash"></i></span>  </button></li>`
     }
 
 }
